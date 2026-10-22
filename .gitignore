@@ -6,3 +6,6 @@
 !.github/
 !.github/**
 !index.html
+# the hero clip is a real file, too heavy at full quality to embed
+!media/
+!media/hero.mp4

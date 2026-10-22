@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Stage only the built page
-        run: mkdir _site && cp index.html _site/
+      - name: Stage only the built page and its hero clip
+        run: mkdir -p _site/media && cp index.html _site/ && cp media/hero.mp4 _site/media/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
